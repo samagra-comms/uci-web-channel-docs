@@ -1,10 +1,10 @@
 ---
-title: Samagra Documentation
+title: UCI Web Channel
 sidebar_label: Overview
 slug: /
 hide_table_of_contents: true
-demoUrl: https://turbo-vercel-testjjjj.vercel.app/
-demoSourceUrl: https://github.com/Samagra-Development/samagra-docs
+demoUrl: https://uci-web-channel-master.vercel.app/login/
+demoSourceUrl: https://github.com/samagra-comms/uci-web-channel-docs
 ---
 
 import DocsCard from '@components/global/DocsCard';
@@ -22,9 +22,6 @@ import DocsCards from '@components/global/DocsCards';
 </head>
 
 
-
-
-
 <intro-end />
 
 <DocsCards>
@@ -32,36 +29,42 @@ import DocsCards from '@components/global/DocsCards';
     <p>Step-by-step guides to setting up your system and installing the framework.</p>
   </DocsCard>
 
+<DocsCard header="Environment Setup" href="/intro/environment" icon="/icons/guide-installation-icon.svg" hoverIcon="/icons/guide-installation-icon-hover.svg">
+    <p>Step-by-step guides to setting up the environment</p>
+  </DocsCard>
 
+  <DocsCard header="Codebase Setup" href="/codeSetup/index" icon="/icons/guide-installation-icon.svg" hoverIcon="/icons/guide-installation-icon-hover.svg">
+    <p>Step-by-step guides to setting up the repo.</p>
+  </DocsCard>
 
+  <DocsCard header="Main Modules" href="/codeSetup/mainModules" icon="/icons/guide-installation-icon.svg" hoverIcon="/icons/guide-installation-icon-hover.svg">
+    <p>Description about the building blocks</p>
+  </DocsCard>
 </DocsCards>
 
-## Overview
+## About UCI :open_book:
 
-Your project's overview
+The Unified Communications Interface (UCI) aims to democratize the use of different communication channels such as WhatsApp, Telegram, SMS, email and more for governance use cases through a standard configurable manner that is reusable and scalable across all governance use cases.
 
-### Sub Heading -1
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+## Features :dart:
 
-
-### Sub Heading -2
-
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-
-## Appflow
-
-Your App Flow
-
-## Ecosystem
-
-Your App's Ecosystem
-
-### Join the Community
-
-There are millions of Ionic developers in over 200 countries worldwide. Here are some ways to join:
+- Ability to connect to any communication channel through any service provider without doing custom changes in the core logic UCI.
+- The UCI ecosystem is independent of external variables like communication channel and service provider powered by XMessage standard.
+- Ability to have a configurable conversation logic for the bot
+- Ability to connect to any database (local or federated) via services
+- Ability to include value added services in the bot interaction flow through Microservices (Internal or External)
+- Ability to create tools on top of UCI APIs to manage Bot configuration, conversations and visualization
 
 
-## License
+### About UCI Web Channel
+It's a web client powered by [NextJs](https://nextjs.org/docs) ,[ChatUI](https://www.npmjs.com/package/samagra-chatui) and [Turborepo](https://turbo.build/repo) and using [UCI](https://github.com/samagra-comms) as backend.
+It demonstrates how we can leverage UCI backend for communication.
 
-Your Project license
+Here we have 2 separate implementation for different senario 
+
+It includes following module :
+
+
+
+
+
